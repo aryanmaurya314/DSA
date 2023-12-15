@@ -1,0 +1,24 @@
+# while filling from left to right all levels must be full except last level 
+
+Types of heap
+1. min-heap: parent node is always less than child node
+2. max-heap: parent node is always greater than child node
+
+* Visualise using tree but optimal implementation is using array(1 - based indexing)
+* To reach parent of i^th child = i / 2
+* To reach left child of i^th parent = 2*i
+* To reach right child of i^th parent = 2*i + 1
+
+* Visualise using tree but optimal implementation is using array(0 - based indexing)
+* To reach parent of i^th left child = i / 2
+* To reach parent of i^th right child = i / 2 - 1
+* To reach left child of i^th parent = 2*i + 1
+* To reach right child of i^th parent = 2*i + 2
+
+heapification: process of claiming its position
+
+# V.I.P.:
+    1. TC to create heap from array = O(n)
+    2. TC to find min/max = O(1)
+    3. TC of insertion/deletion = O(log(n))
+    4. TC of heap sort = O(n(log(n)))

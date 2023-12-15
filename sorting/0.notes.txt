@@ -1,0 +1,32 @@
+# stable sort: order of duplicate elements preserved
+# unstable sort: order of duplicate elements not preserved
+
+
+## Selection Sort and Bubble Sort are two commonly discussed sorting algorithms,
+   and their stability depends on how they handle equal elements during the sorting process:
+
+1. **Selection Sort**:
+   - Selection Sort is an unstable sorting algorithm.
+     It repeatedly selects the minimum (or maximum) element from the unsorted portion of the array
+     and places it at the beginning of the sorted portion.
+   - During the selection process, if there are equal elements, Selection Sort does not guarantee
+     that their original order will be preserved in the sorted output. It might swap their positions,
+     leading to an unstable sort.
+
+2. **Bubble Sort**:
+   - Bubble Sort can be both stable and unstable, depending on how it's implemented.
+   - In its simplest form, Bubble Sort is an unstable sort because it compares adjacent elements
+     and swaps them if they are out of order without considering the original order of equal elements.
+     This can lead to the relative order of equal elements changing in the sorted output.
+   - However, Bubble Sort can be modified to make it stable. To achieve stability,
+     you would need to modify the swapping condition to only swap adjacent elements
+     if they are out of order and also have a different key (i.e., their original order in the input was different).
+     This modification ensures that equal elements maintain their relative order.
+
+In practice, Bubble Sort is rarely used for sorting large datasets due to its inefficiency,
+regardless of whether it's stable or unstable. Selection Sort is also not the most efficient sorting algorithm,
+and there are generally better alternatives available. If stability is a requirement for your sorting task,
+it's often better to use a stable sorting algorithm like Merge Sort, Insertion Sort, or Tim Sort.
+
+
+// Important Question : In case of linked list which algo is better merge sort or quick sort 

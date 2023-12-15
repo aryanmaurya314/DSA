@@ -1,0 +1,18 @@
+Type of maps:
+    1. unordered map: Implemented using balanced BST 
+        TC{search, insert, delete} = O(logn)
+    2. ordered map: Implemented using array, hashtable, bucket array
+        TC{search, insert, delete} = O(1)
+
+Hash function: a function used to create key into valid index
+    consists of:
+        Hash code: formula to convert into integer
+        Compression function: change interger to in bounds
+        
+collision handling: when hash code gives same output 
+    techniques:
+        1. open hashing: create a linkedlist at collision index
+        2. closed addressing: find open index using linear probing or quadratic probing
+
+Note: A good is that which has less number of collisions
+    

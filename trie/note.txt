@@ -1,0 +1,2 @@
+1. Helps in pattern searching
+2. Multiway tree structure
